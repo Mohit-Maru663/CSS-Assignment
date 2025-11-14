@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px;
+}
+.leftHeader {
+  font-size: 32px;
+  font-weight: 700;
+  
+  
+}
+.leftHeader a{
+  text-decoration: none;
+  color: darkslategrey; 
+}
+.navbar {
+  font-size: large;
+  padding: 20px;
+}
+ul {
+  display: flex;
+  gap: 30px;
+  /* text-decoration: none; */
+  list-style: none;
+  font-size: 22px;
+}
+li a {
+  transition: color 0.3s ease;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 10px;
+}
+li a:hover {
+  color: whitesmoke;
+  background-color: black;
+}
+.btn-username {
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 18px;
+  border: none;
+  color: rgb(26, 78, 167);
+  background-color: rgb(65, 190, 240);
+}
+.btn-username:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+.Hero {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 80px;
+  background-color: yellowgreen;
+}
+
+.leftHero h1 {
+  font-size: 48px;
+  padding: 20px;
+  color: #054145;
+}
+.leftHero p {
+  font-size: 24px;
+  padding: 20px;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.704);
+}
+.leftHero button {
+  margin-top: 50px;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: rgb(50, 122, 221);
+  color: beige;
+}
+.leftHero button:hover {
+  background-color: #0056b3;
+  color: blanchedalmond;
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-y: auto;
+  }
+  .hero {
+    flex-direction: column;
+    height: auto;
+  }
+  .leftHero .righthero {
+    width: 100%;
+    height: auto;
+  }
+  .leftHero {
+    padding: 3rem 1rem;
+    align-items: center;
+    text-align: center;
+  }
+}
